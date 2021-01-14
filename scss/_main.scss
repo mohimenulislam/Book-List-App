@@ -1,0 +1,47 @@
+.main_area {
+    height: 100vh;
+    background-color: rgb(226, 223, 43);
+    overflow: hidden;
+    h2 {
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+.flex_container {
+    display: flex;
+    flex-direction: row;
+}
+form {
+    margin-top: 50px;
+    input[type="submit"],input[type="text"] {
+        width: 70%;
+    }
+    .input-group {
+        width: 70%;
+        .input-group-text {
+            width: 80px;
+            background-color: #212529;
+            color: #fff;
+        }
+    }
+}
+.left_side {
+    width: 50%;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 500px;
+        background-color: black;
+        top: 0;
+        right: 0;
+    }
+}
+.right_side {
+    width: 50%;
+}
+.table {
+    width: 90%;
+    margin: 10px;
+}
